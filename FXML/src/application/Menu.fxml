@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/25" fx:controller="application.MainController">
+  <columnConstraints>
+    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <VBox alignment="CENTER" maxHeight="150.0" maxWidth="100.0" onMouseClicked="#main">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@main.png" />
+               </image>
+            </ImageView>
+            <Label text="메인화면">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" maxHeight="150.0" maxWidth="100.0" GridPane.rowIndex="1">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="100.0" onMouseClicked="#login" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@login.png" />
+               </image>
+            </ImageView>
+            <Label text="로그인">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" maxHeight="150.0" maxWidth="100.0" GridPane.columnIndex="1">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="100.0" onMouseClicked="#join" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@join.png" />
+               </image>
+            </ImageView>
+            <Label text="회원가입">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" maxHeight="150.0" maxWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="100.0" onMouseClicked="#board" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@board.png" />
+               </image>
+            </ImageView>
+            <Label text="게시판">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</GridPane>
