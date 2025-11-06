@@ -30,6 +30,7 @@ public class StageManager {
 		scene = new Scene( new StackPane());
 		stage.setScene(scene);
 	}
+	
 	/**
 	 * 화면 이동
 	 * - FXML 파일을 로드하여 root 컨테이너 교체
@@ -48,6 +49,7 @@ public class StageManager {
 			System.err.println("FXML 로드 실패 - 화면 이동 실패");
 		}
 	}
+	
 	/**
 	 * 화면 이동
 	 * : 새로운 Scene으로 전환하여 화면 이동
