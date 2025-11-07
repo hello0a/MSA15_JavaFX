@@ -1,1 +1,35 @@
 /* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+/* 전체 */
+.root {
+	/* 그라데이션 배경 */
+	-fx-background-color: linear-gradient(to bottom right, orange, yellow);
+}
+
+.title-labe {
+	-fx-font-size: 42px;
+	-fx-font-weight: bold;
+	-fx-text-fill : black;
+}
+.menu-label {
+	-fx-font-size: 28px;
+	-fx-text-fill: black;
+}
+.image-pane {
+	-fx-background-color: rgba(0, 0, 0, 0.3);
+	-fx-background-radius: 20px;
+	-fx-border-radius: 20px;
+	-fx-border-color: #ccc;
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1) 10, 0, 0, 4);
+	-fx-alignment: center;
+}
+.btn {
+	-fx-font-size: 24px;
+	-fx-background-color: black;
+	-fx-text-fill: orange;
+	-fx-background-radius: 30px;
+	-fx-cursor: hand;
+}
+.btn:hover {
+	-fx-background-color: white;
+}
