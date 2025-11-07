@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 
 
 public class Main extends Application {
@@ -21,6 +22,14 @@ public class Main extends Application {
 		Parent container = loadFXML("Main");
 		// Main.fxml 화면 레이아웃을 지정하여 Scene 생성
 		scene = new Scene (container);
+		
+		//윈도우 제목 설정
+		stage.setTitle("점메추");
+		//프로그램 아이콘 지정
+		String iconPath = getClass().getResource("/img/아이콘.png").toString();
+		Image icon = new Image(iconPath);		// scr/img/아이콘.png 저장
+		stage.getIcons().add(icon);
+		
 		// Stage 에 Scene 등록
 		stage.setScene(scene);
 		// Stage 출력

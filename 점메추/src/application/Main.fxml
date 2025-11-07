@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
    <children>
       <Label alignment="CENTER" layoutX="194.0" layoutY="45.0" prefHeight="57.0" prefWidth="212.0" text="점메추">
@@ -30,7 +29,7 @@
             <Font size="30.0" />
          </font>
       </Button>
-      <Label fx:id="menu" layoutX="255.0" layoutY="400.0" text="오늘은?">
+      <Label fx:id="menu" alignment="CENTER" contentDisplay="CENTER" layoutX="255.0" layoutY="400.0" text="오늘은?" textAlignment="CENTER">
          <font>
             <Font size="30.0" />
          </font>
