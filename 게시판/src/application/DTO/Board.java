@@ -30,7 +30,7 @@ public class Board {
 	@NonNull private String title;
 	@NonNull private String writer;
 	@NonNull private String content;
-	private Date createAt;
+	private Date createdAt;
 	private Date updatedAt;
 	
 	

@@ -10,8 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.InsertController">
    <children>
       <Label alignment="CENTER" layoutX="338.0" layoutY="44.0" prefHeight="51.0" prefWidth="124.0" text="글쓰기">
          <font>
@@ -27,7 +26,7 @@
                         <Font size="30.0" />
                      </font>
                   </Label>
-                  <TextField prefHeight="50.0" prefWidth="550.0" promptText="제목을 입력해주세요.">
+                  <TextField fx:id="inputTitle" prefHeight="50.0" prefWidth="550.0" promptText="제목을 입력해주세요.">
                      <font>
                         <Font size="24.0" />
                      </font>
@@ -41,7 +40,7 @@
                         <Font size="30.0" />
                      </font>
                   </Label>
-                  <TextField prefHeight="50.0" prefWidth="550.0" promptText="작성자를 입력해주세요.">
+                  <TextField fx:id="inputWriter" prefHeight="50.0" prefWidth="550.0" promptText="작성자를 입력해주세요.">
                      <font>
                         <Font size="24.0" />
                      </font>
@@ -53,20 +52,20 @@
                   <Font size="30.0" />
                </font>
             </Label>
-            <TextArea maxHeight="300.0" maxWidth="700.0" prefHeight="200.0" prefWidth="700.0" promptText="내용을 입력해주세요.">
+            <TextArea fx:id="inputContent" maxHeight="300.0" maxWidth="700.0" prefHeight="200.0" prefWidth="700.0" promptText="내용을 입력해주세요.">
                <font>
                   <Font size="30.0" />
                </font>
             </TextArea>
             <HBox alignment="CENTER" maxWidth="700.0" prefHeight="70.0" prefWidth="700.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="120.0" text="목록">
+                  <Button mnemonicParsing="false" onAction="#list" prefHeight="50.0" prefWidth="120.0" text="목록">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </Button>
                   <Region prefHeight="50.0" prefWidth="459.0" />
-                  <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="120.0" text="등록">
+                  <Button mnemonicParsing="false" onAction="#insert" prefHeight="50.0" prefWidth="120.0" text="등록">
                      <font>
                         <Font size="20.0" />
                      </font>

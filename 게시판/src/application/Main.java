@@ -13,8 +13,8 @@ public class Main extends Application {
 		StageManager.initialize(stage);
 //		StageManager.show("UI/Insert");
 //		StageManager.show("UI/Read");
-		StageManager.show("UI/Update");
-//		StageManager.show("Main");
+//		StageManager.show("UI/Update");
+		StageManager.show("Main");
 	}
 	
 	public static void main(String[] args) {

@@ -44,7 +44,7 @@ public class BoardDAO extends JDBConnection {
 				board.setTitle( rs.getString("title") );
 				board.setWriter( rs.getString("writer") );
 				board.setContent( rs.getString("content") );
-				board.setCreateAt( rs.getTimestamp("created_at") );
+				board.setCreatedAt( rs.getTimestamp("created_at") );
 				board.setUpdatedAt( rs.getTimestamp("updated_at") );
 				
 				// 게시글 목록에 추가
@@ -88,7 +88,7 @@ public class BoardDAO extends JDBConnection {
 				board.setTitle( rs.getString("title") );
 				board.setWriter( rs.getString("writer") );
 				board.setContent( rs.getString("content") );
-				board.setCreateAt( rs.getTimestamp("created_at") );
+				board.setCreatedAt( rs.getTimestamp("created_at") );
 				board.setUpdatedAt( rs.getTimestamp("updated_at") );
 				}
 		} catch (Exception e) {
