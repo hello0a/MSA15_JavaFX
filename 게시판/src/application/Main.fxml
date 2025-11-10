@@ -21,7 +21,7 @@
         <columns>
           <TableColumn fx:id="colCheck" prefWidth="27.0">
                <graphic>
-                  <CheckBox alignment="CENTER" mnemonicParsing="false">
+                  <CheckBox fx:id="checkBox" alignment="CENTER" mnemonicParsing="false" onAction="#check">
                      <font>
                         <Font size="14.0" />
                      </font>
