@@ -11,8 +11,10 @@ public class Main extends Application {
 	@Override
 	public void start(Stage stage) {
 		StageManager.initialize(stage);
-		StageManager.show("UI/Insert");
-//		StageManager.show("UI/Main");
+//		StageManager.show("UI/Insert");
+//		StageManager.show("UI/Read");
+		StageManager.show("UI/Update");
+//		StageManager.show("Main");
 	}
 	
 	public static void main(String[] args) {
